@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>tnit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h2>Emission Tracker</h2>
+    </header>
+    <div class="renderBox" id="renderBox">
+        <h2 class="activeTab">Current Tab</h2><p class="data">0</p>
+        <div style="display:flex;align-items:center;justify-content:space-around;margin-bottom:5px;margin-top:5px;">
+            <h3>Wanna Take it to the next Level?</h3>
+            <label class="switch">
+                <input type="checkbox" id="onButton">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="predataBox">
+            <h2>Current Webpage Previous Emission Data</h2>
+            <div class="preData">58.6kb</div>
+            <div class="hr"></div>
+        </div>
+        <div class="onData"></div>
+    </div>
+    <button class="sbtn" ><a href="./login/login.html" action="popup"  >Login</a></button>
+    <a href="http://localhost:5000">See Website Ranking</a>
+    <a href="http://localhost:5000/userStats">See UserStats</a>
+    <script src="./popup.js"></script>
+</body>
+
+</html>

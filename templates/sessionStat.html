@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename = 'css/styles.css')}}">
+    <title>Session Stats</title>
+</head>
+<body>
+    <div class="content">
+        <nav class='navbar'>
+            <h1>User Session Emission</h1>
+            <div class='links'>
+                <a href="/">Home</a>
+            </div>
+        </nav>
+        <div class="blog-list">
+            {% for i in data %}
+        <div class="blog-preview">
+            <h3>{{i[1]}}</h3><h3>{{i[2]}}mg</h3>
+        </div>
+        {% endfor %}
+    </div>
+    </div>
+</body>
+</html>

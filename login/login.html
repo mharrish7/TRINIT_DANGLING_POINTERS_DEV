@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+*{
+    font-family: 'Ubuntu', sans-serif;
+}
+    .marginauto {
+    margin: 10px auto 20px;
+    display: block;
+}
+.bgClr{
+    background-color: #333;
+}
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+}
+
+.gclr{
+    color: #31c208;
+}
+
+.form-signin .form-floating:focus-within {
+    z-index: 2;
+}
+
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.ualertBox {
+    display: none;
+}
+.palertBox{
+    display: none;
+}
+.errorBox{
+    display: none;
+}
+
+    </style>
+    <title>Login Form</title>
+  </head>
+  <body class="bgClr">
+    <h1 class="h1 m-5 fw-normal text-center gclr"><strong>Emission Tracker</strong></h1>
+    <main class="form-signin">
+            <h2 class="h2 mb-3 text-center gclr fw-normal">Login here!</h2>
+            <div class="form-floating">
+                <input name="username" type="text" class="form-control" id="username" placeholder="Username">
+                <label for="floatingInput">Username</label>
+                <p class="text-danger ualertBox mt-1 mb-1">* Field is empty !</p>
+            </div>
+            <div class="form-floating mt-1">
+                <input name="password" type="password" class="form-control" id="password" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+                <p class="text-danger palertBox mt-1 mb-1">* Field is empty !</p>
+            </div>
+            <h3 class="text-primary" id="errorBox"></h3>
+            <div class="buttons">
+                <button class="w-100 btn btn-lg btn-success hvr-buzz-out subBtn" type="submit">Sign in</button>
+                <button class="mt-2 w-100 btn btn-lg btn-primary hvr-buzz-out regBtn"><a href="./signup.html" class="text-decoration-none text-light">New here? Sign Up</a></button>
+            </div>
+    </main>
+    <script src="../login.js"></script>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+  </body>
+</html>

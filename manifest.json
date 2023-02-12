@@ -1,0 +1,27 @@
+{
+  "name": "Emission Tracker",
+  "description": "Calculates Co2 Emission from Data",
+  "version": "1.5",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_icon": {
+      "16": "netowork.png"
+     }
+  },
+  "permissions": [
+    "tabs",
+    "unlimitedStorage",
+    "storage",
+    "debugger",
+    "scripting",
+    "http://localhost:5000/*"
+  ],
+  "host_permissions": [
+    "https://*/*",
+    "http://*/*"
+  ]
+}
